@@ -1,0 +1,17 @@
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0 10px;
+  /*make it fit perfectly*/
+  grid-auto-rows: 10px;
+}
+.images img {
+  width: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+/* Add some nice hover effects */
+.images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
